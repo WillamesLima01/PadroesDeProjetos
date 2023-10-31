@@ -24,8 +24,8 @@ public class Aplication {
         Cargo cargo1 = new Cargo("Administrativo");
         Cargo cargo2 = new Cargo("Gerente");
 
-        Profissao profissao1 = new Profissao("Administrador");
-        Profissao profissao2 = new Profissao("Contador");
+        Profissao profissao1 = Profissao.DIRETOR;
+        Profissao profissao2 = Profissao.GERENTE;
 
         Pessoa pessoa1 = new Pessoa("José", new Date(), endereco1, List.of(telefone1));
         Pessoa pessoa2 = new Pessoa("Maria de Lurdes", new Date(), endereco2, List.of(telefone2));

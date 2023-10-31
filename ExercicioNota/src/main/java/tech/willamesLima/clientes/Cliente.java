@@ -18,19 +18,30 @@ public class Cliente extends Pessoa {
         this.profissao = profissao;
     }
 
+    public void cadastrar(String nome, Date dataNascimento, Endereco endereco, Collection<Telefone> telsContato){
+        setNome(nome);
+        setDataNascimento(dataNascimento);
+        setEndereco(endereco);
+        setTelsContato(telsContato);
+    }
+
     public String getCodigo() {
+
         return codigo;
     }
 
     public void setCodigo(String codigo) {
+
         this.codigo = codigo;
     }
 
     public Profissao getProfissao() {
+
         return profissao;
     }
 
     public void setProfissao(Profissao profissao) {
+
         this.profissao = profissao;
     }
 
@@ -38,7 +49,7 @@ public class Cliente extends Pessoa {
     public String toString() {
         return "Cliente{" +
                 "codigo='" + codigo + '\'' +
-                ", profissao=" + profissao.getDescricao() +
+                ", profissao=" + getProfissao() +
                 ", nome='" + getNome() + '\'' +
                 ", dataNascimento=" + getDataNascimento() +
                 ", endereco=" + getEndereco() +

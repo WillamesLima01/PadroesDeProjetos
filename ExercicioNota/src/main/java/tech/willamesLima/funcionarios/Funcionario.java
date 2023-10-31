@@ -22,27 +22,44 @@ public class Funcionario extends Pessoa {
         this.dataAdmissao = dataAdmissao;
     }
 
+    public void reajustarSalario(Double percentual){
+        Double acrescimo = (percentual/100) + 1;
+        this.salario = this.salario * acrescimo;
+
+    }
+
+    public void promover(Cargo novoCargo){
+       this.cargo = novoCargo;
+
+    }
+
     public Integer getMatrícula() {
+
         return matrícula;
     }
 
     public void setMatrícula(Integer matrícula) {
+
         this.matrícula = matrícula;
     }
 
     public Cargo getCargo() {
+
         return cargo;
     }
 
     public void setCargo(Cargo cargo) {
+
         this.cargo = cargo;
     }
 
     public Double getSalario() {
+
         return salario;
     }
 
     public void setSalario(Double salario) {
+
         this.salario = salario;
     }
 

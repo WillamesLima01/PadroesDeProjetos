@@ -20,6 +20,21 @@ public class Pessoa {
         this.telsContato = telsContato;
     }
 
+    public void cadastrar(String nome, Date dataNascimento, Endereco endereco, Collection<Telefone>telsContato){
+
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.endereco = endereco;
+        this.telsContato = telsContato;
+    }
+
+    public int obterIdade(){
+
+        int idade = 0;
+
+        return idade;
+    }
+
     public String getNome() {
 
         return nome;

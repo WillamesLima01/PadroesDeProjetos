@@ -4,6 +4,7 @@ import tech.willamesLima.pessoas.Endereco;
 import tech.willamesLima.pessoas.Pessoa;
 import tech.willamesLima.pessoas.Telefone;
 
+import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Date;
 
@@ -12,17 +13,20 @@ public class Cliente extends Pessoa {
     private String codigo;
     private Profissao profissao;
 
-    public Cliente(String nome, Date dataNascimento, Endereco endereco, Collection<Telefone> telsContato, String codigo, Profissao profissao) {
+    public Cliente(String nome, LocalDate dataNascimento, Endereco endereco, Collection<Telefone> telsContato, String codigo, Profissao profissao) {
         super(nome, dataNascimento, endereco, telsContato);
         this.codigo = codigo;
         this.profissao = profissao;
     }
 
-    public void cadastrar(String nome, Date dataNascimento, Endereco endereco, Collection<Telefone> telsContato){
+    public void cadastrar(String nome, LocalDate dataNascimento, Endereco endereco, Collection<Telefone> telsContato){
+
         setNome(nome);
         setDataNascimento(dataNascimento);
         setEndereco(endereco);
         setTelsContato(telsContato);
+        this.codigo = codigo;
+        this.profissao = profissao;
     }
 
     public String getCodigo() {
